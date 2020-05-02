@@ -101,25 +101,34 @@ print("Wk en el 2020",wk_por_anno)
 
 
 #Para los bisiestos averiguar cuales son bisiestos
-anno = anno_fecha_nacimiento
+total_anno_vida = 0
 total_anno_bisiestos = 0
 anno_nacimiento_bisiesto = False
-total_anno_vida = 0
+anno = anno_fecha_nacimiento
 while anno < anno_fecha_actual:
   #print(anno)
-  if anno == anno_fecha_nacimiento:
-      # Construyo el año a evaliuar
-      new_date = datetime(anno, 12, 31, 10, 15, 00, 00000)
-      wk_por_anno = new_date.isocalendar()[1]
-      if wk_por_anno > 52:
+    # Construyo el año a evaliuar
+    new_date = datetime(anno, 12, 31, 10, 15, 00, 00000)
+    wk_por_anno = new_date.isocalendar()[1]
+    if wk_por_anno > 52:
           total_anno_bisiestos += 1
           if  anno == anno_fecha_nacimiento:
               anno_nacimiento_bisiesto = True
   # Aumento el apuntador
-  anno += 1
-  total_anno_vida += 1
+    anno += 1
+    total_anno_vida += 1
 
 # Resultados
 print(total_anno_vida, total_anno_bisiestos, anno_nacimiento_bisiesto)
 
-#print(semanas_edad)
+# Empezamos a clacular los años de vida - los años de vida menos el primero por las semanas del año
+total_semana_vida = (total_anno_vida - 1) * 52
+# sumanos las del primer año
+if anno_nacimiento_bisiesto:
+    total_semana_vida = total_semana_vida + (53 - wk_fecha_nacimiento)
+else:
+    total_semana_vida = total_semana_vida + (52 - wk_fecha_nacimiento)
+# sumanos las semanas del último año
+total_semana_vida = total_semana_vida + wk_fecha_actual
+
+print("Total semanas de edad", total_semana_vida)
