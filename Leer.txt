@@ -1,5 +1,7 @@
 Hi, Diro
 
+BackSlash   -   \
+
 Configurando mi Editor
   https://platzi.com/contributions/configurando-mi-editor-atom-para-python/
   file-icons
@@ -7,4 +9,3 @@ Configurando mi Editor
 
 Links:
   https://www.programiz.com/python-programming/keyword-list
-  
