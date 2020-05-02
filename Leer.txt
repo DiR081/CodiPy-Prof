@@ -1,1 +1,10 @@
 Hi, Diro
+
+Configurando mi Editor
+  https://platzi.com/contributions/configurando-mi-editor-atom-para-python/
+  file-icons
+  autocomplete-python
+
+Links:
+  https://www.programiz.com/python-programming/keyword-list
+  
