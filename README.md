@@ -16,6 +16,14 @@ _las cosas que necesitas para instalar el software y como instalarlo serían:_
 _por ejemplo:_
 
 ```
+Cargar el ambiente virtual
+    python -m venv CodiPy-Prof
+
+```
+
+_otros paquetes_
+
+```
  Instalar Python 3.5
  paquete PIP
  paquete ENV
