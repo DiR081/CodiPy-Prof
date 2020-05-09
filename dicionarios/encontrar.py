@@ -8,7 +8,7 @@ resultado = dicionario["a"]
 print(resultado)
 
 # No encontrado - genera Error
-resultado = dicionario["z"]
+#resultado = dicionario["z"]
 print(resultado)
 
 # Encontrado - Sin Error
@@ -26,6 +26,8 @@ print(resultado)
 # asigna y retorna el valor
 # Encontrado - Sin Error
 resultado = dicionario.setdefault("Z", {})
+print(resultado)
+resultado = dicionario.setdefault("a", {})
 print(resultado)
 
 # Usar la palabra reservada "in"
